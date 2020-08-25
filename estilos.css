@@ -1,0 +1,95 @@
+header{
+    background: url(Fondo1.jpg) round scroll;
+    border-radius: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+h1{
+    color: white;
+    height: 400px;
+    margin: 0px;
+    padding-top: 0px;
+}
+nav{
+    background: black;
+    border-radius: 10px;
+    width: 30em;
+    height: 2em;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: calc(flex-center-0,5em);
+}
+.i_menu{
+    color: white;
+    width: 7em;
+    height: 1em;
+    padding: 10px;
+    text-decoration: none;
+    display: inline-flex;
+    justify-content: center;
+}
+.i_menu:hover{
+    color:white;
+    border-radius: 10px;
+    background: rgb(12, 22, 39);
+}
+.pos-tablas{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+table{
+    border-collapse: collapse;
+}
+th{
+    height: 2em;
+    color: white;
+    font-size: 20px;
+    background: rgb(18, 18, 77);
+    border-radius: 10px;
+}
+.centrado{
+    text-align: center;
+}
+.resultado{
+    font-size: 40px;
+    width: 100px;
+    border-spacing: 20em;
+    
+}
+.sub-hd-iconos1{
+    padding: 5px;
+    background-color: rgb(32, 98, 136);
+    border-radius: 10px 0px 0px 10px;
+}
+.sub-hd-iconos2{
+    padding: 5px;
+    background-color: rgb(32, 98, 136);
+    border-radius: 0px 10px 10px 0px;
+}
+
+.sub-hd{
+    color: white;
+    font-size: 25px;
+    width: 400px;
+    border-radius: 0;
+}
+.img-logo{
+    width: 30px;
+    height: 30px;
+}
+.h-celda{
+    height: 50px;
+}
+
+.tag-estadisticas{
+    font-size: 20px;
+    width: 150px;
+}
+.datos{
+    font-size: 18px;
+}
