@@ -1,3 +1,6 @@
+body{
+    background-image: url(Fondo.jpg);
+}
 header{
     background: url(Fondo1.jpg) round scroll;
     border-radius: 10px;
@@ -37,19 +40,23 @@ nav{
     background: rgb(12, 22, 39);
 }
 .pos-tablas{
+    margin: 20px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
 }
 table{
+    width: 600px;
     border-collapse: collapse;
+    background: white;
+    border-radius: 10px;
 }
 th{
     height: 2em;
     color: white;
     font-size: 20px;
-    background: rgb(18, 18, 77);
+    background: black;
     border-radius: 10px;
 }
 .centrado{
@@ -57,9 +64,11 @@ th{
 }
 .resultado{
     font-size: 40px;
-    width: 100px;
-    border-spacing: 20em;
+    width: 150px;
     
+}
+.borde-top{
+    border-top: 1px solid #ccc;
 }
 .sub-hd-iconos1{
     padding: 5px;
@@ -75,7 +84,7 @@ th{
 .sub-hd{
     color: white;
     font-size: 25px;
-    width: 400px;
+    width: 500px;
     border-radius: 0;
 }
 .img-logo{
@@ -92,4 +101,61 @@ th{
 }
 .datos{
     font-size: 18px;
+}
+address{
+    background: black;
+    color: white;
+}
+/* pagina comentarios */
+.contenido{
+    display: flex;
+    flex-direction: column;
+    justify-items: start;
+    align-items: center;
+}
+.cont-item{
+    background-color: white;
+    width: 75%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-items: start;
+    align-items: start;
+}
+.titular{
+    color:black;
+    font-size: 50px;
+    padding-left: 20px;
+}
+.subtitulo{
+    color:gray;
+    font-weight: bold;
+    font-size: 22px;
+    margin: 0px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-bottom:1px solid teal;
+}
+
+.img-campeon{
+    max-width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+    justify-content: center;
+    align-items: center;
+}
+.nav-relatos{
+    background: #909090;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.artic{
+    color: #304040;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 0px 20px 20px 20px;
 }
