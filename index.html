@@ -4,120 +4,130 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>UEFA CHAMPIONS LEAGUE</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
-    <header>
+    <header class="container">
         <h1>FINAL</h1>
-        <nav>
-            <a class = "i_menu" href="comentarios.html">Comentarios</a>
-            <a class = "i_menu" href="index.html">Estadísticas</a>
-            <a class = "i_menu" href="formaciones.html">Formaciones</a>
-        </nav>
     </header>
-    <main>
-        <article class="pos-tablas">
-            <table>
+    <nav class=" container navbar nav-pills navbar-dark bg-dark navbar-expand-sm sticky-top">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#menu-resp" aria-controls="menu-resp" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="nav-fill navbar-collapse collapse justify-content-center" id="menu-resp">
+            <a type="button" class="btn btn-dark nav-link text-white" href="comentarios.html">Comentarios</a>
+            <a type="button" class="btn btn-dark nav-link text-white active" href="index.html">Estadísticas</a>
+            <a type="button" class="btn btn-dark nav-link text-white" href="formaciones.html">Formaciones</a>
+            <a type="button" class="btn btn-dark nav-link text-white" href="contacto.html">Contacto</a>
+        </div>
+    </nav>
+    <main class="container bg-white flex">
+        <article class="table-responsive">
+            <table class="table text-center">
                 <caption>
                     <th colspan="5">
-                            Partido finalizado
+                           <h2>Partido finalizado</h2>
                     </th>
                 </caption>
                 <tbody>
                     <tr>
-                        <td><img class="ic_result" src="img\PSG.png" alt="PSG"></td>
-                        <td class="resultado centrado">0</td>
-                        <td class="resultado centrado">-</td>
-                        <td class="resultado centrado">1</td>
-                        <td><img class="ic_result" src="img\Bayern.png" alt="Bayern"></td>
+                        <td style="min-width:73px;"><img src="img\PSG.png" alt="PSG" class="img-fluid"></td>
+                        <td class="display-4" style="width:220px;">0</td>
+                        <td class="display-4">-</td>
+                        <td class="display-4" style="width:220px;">1</td>
+                        <td style="min-width:73px;"><img src="img\Bayern.png" alt="Bayern" class="img-fluid"></td>
                     </tr>
                     <tr>
-                        <td class="ic_result centrado">PSG</td>
-                        <td class="resultado"></td>
-                        <td class="resultado"></td>
-                        <td class="resultado"></td>
-                        <td class="ic_result centrado">Bayern</td>
+                        <td>PSG</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>Bayern</td>
                     </tr>
                     <tr>
-                        <td class="borde-top"></td>
-                        <td class="borde-top"></td>
-                        <td class="borde-top centrado"><img class="img-logo" src="img\futbol.png" alt="Goles"></td>
-                        <td class="borde-top" colspan="2" style="text-align-last: right;";">Kingsley Coman 59'</td>
+                        <td></td>
+                        <td></td>
+                        <td><img src="img\futbol.png" alt="Goles" width="30px"></td>
+                        <td colspan="2" style="text-align-last: right;";">Kingsley Coman 59'</td>
                     </tr>
                 </tbody>
             </table>
-            <table>
+            <table class="table table-dark table-striped text-center">
                 <tbody>
                     <tr>
-                        <td class="sub-hd-iconos1">
-                            <div><img class="img-logo" alt="PSG" src="img\PSG.png"></div>
+                        <td>
+                            <div><img alt="PSG" src="img\PSG.png" style="max-width: 50px;" ></div>
                         </td>
-                        <td class="sub-hd sub-hd-iconos1 centrado">Estadísticas del equipo</td>
-                        <td class="sub-hd-iconos1 sub-hd-iconos2">
-                            <div><img class="img-logo" alt="Bayern" src="img\Bayern.png"></div>
+                        <td><h2>Estadísticas del equipo</h2></td>
+                        <td>
+                            <div><img alt="Bayern" src="img\Bayern.png" width="50px"></div>
                         </td>
                     </tr>
-                    <tr class="h-celda">
-                        <td class="datos centrado">10</td>
-                        <td class="tag-estadisticas centrado">Remates</td>
-                        <td class="datos centrado">12</td>
+                    <tr>
+                        <td>10</td>
+                        <td>Remates</td>
+                        <td>12</td>
                     </tr>
-                    <tr class="h-celda">
-                        <td class="datos centrado">3</td>
-                        <td class="tag-estadisticas centrado">Remates al arco</td>
-                        <td class="datos centrado">2</td>
+                    <tr>
+                        <td>3</td>
+                        <td>Remates al arco</td>
+                        <td>2</td>
                     </tr>
-                    <tr class="h-celda">
-                        <td class="datos centrado">38%</td>
-                        <td class="tag-estadisticas centrado">Posesión</td>
-                        <td class="datos centrado">62%</td>
+                    <tr>
+                        <td>38%</td>
+                        <td>Posesión</td>
+                        <td>62%</td>
                     </tr>
-                    <tr class="h-celda">
-                        <td class="datos centrado">322</td>
-                        <td class="tag-estadisticas centrado">Pases</td>
-                        <td class="datos centrado">515</td>
+                    <tr>
+                        <td>322</td>
+                        <td>Pases</td>
+                        <td>515</td>
                     </tr>
-                    <tr class="h-celda">
-                        <td class="datos centrado">74%</td>
-                        <td class="tag-estadisticas centrado">Precisión de los pases</td>
-                        <td class="datos centrado">84%</td>
+                    <tr>
+                        <td>74%</td>
+                        <td>Precisión de los pases</td>
+                        <td>84%</td>
                     </tr>
-                    <tr class="h-celda">
-                        <td class="datos centrado">16</td>
-                        <td class="tag-estadisticas centrado">Faltas</td>
-                        <td class="datos centrado">22</td>
+                    <tr>
+                        <td>16</td>
+                        <td>Faltas</td>
+                        <td>22</td>
                     </tr>
-                    <tr class="h-celda">
-                        <td class="datos centrado">4</td>
-                        <td class="tag-estadisticas centrado" >Tarjetas amarillas</td>
-                        <td class="datos centrado">4</td>
+                    <tr>
+                        <td>4</td>
+                        <td >Tarjetas amarillas</td>
+                        <td>4</td>
                     </tr>
-                    <tr class="h-celda">
-                        <td class="datos centrado">0</td>
-                        <td class="tag-estadisticas centrado">Tarjetas rojas</td>
-                        <td class="datos centrado">0</td>
+                    <tr>
+                        <td>0</td>
+                        <td>Tarjetas rojas</td>
+                        <td>0</td>
                     </tr>
-                    <tr class="h-celda">
-                        <td class="datos centrado">2</td>
-                        <td class="tag-estadisticas centrado">Posición adelantada</td>
-                        <td class="datos centrado">1</td>
+                    <tr>
+                        <td>2</td>
+                        <td>Posición adelantada</td>
+                        <td>1</td>
                     </tr>
-                    <tr class="h-celda">
-                        <td class="datos centrado">4</td>
-                        <td class="tag-estadisticas centrado">Tiros de esquina</td>
-                        <td class="datos centrado">4</td>
+                    <tr>
+                        <td>4</td>
+                        <td>Tiros de esquina</td>
+                        <td>4</td>
                     </tr>
                 </tbody>
             </table>
         </article>
     </main>
-    <footer>
-        <address>
+    <footer class="container-fluid bg-dark">
+        <address class="text-white">
             <p>Pablo Javier Caardozo</p>
             <p>Programa CLIP</p>
             <p>Año: 2020</p>
 
         </address>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 </body>
 </html>

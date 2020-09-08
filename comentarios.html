@@ -4,36 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>UEFA CHAMPIONS LEAGUE</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
-    <header>
-        <h1>FINAL</h1>
-        <nav>
-            <a class = "i_menu" href="comentarios.html">Comentarios</a>
-            <a class = "i_menu" href="index.html">Estadísticas</a>
-            <a class = "i_menu" href="formaciones.html">Formaciones</a>
-        </nav>
+    <header class="container">
+        <h1 class="text-center">FINAL</h1>
     </header>
+        <nav class="container navbar nav-pills navbar-dark bg-dark navbar-expand-sm sticky-top">
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#menu-resp" aria-controls="menu-resp" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="nav-fill navbar-collapse collapse justify-content-center" id="menu-resp">
+                <a type="button" class="btn btn-dark nav-link text-white  active" href="comentarios.html">Comentarios</a>
+                <a type="button" class="btn btn-dark nav-link text-white" href="index.html">Estadísticas</a>
+                <a type="button" class="btn btn-dark nav-link text-white" href="formaciones.html">Formaciones</a>
+                <a type="button" class="btn btn-dark nav-link text-white" href="contacto.html">Contacto</a>
+            </div>
+        </nav>
+    
 
-    <main>
-        <article class="contenido">
-            <div class="titular">
+    <main class="container bg-white">
+        <article>
+            <div>
                 <h2>Bayern Múnich venció al PSG y se consagró campeón de la Champions League</h2>
             </div>
-            <h3 class="subtitulo">Coman marcó el único gol de la final y le dio el trofeo al cuadro alemán, que ganó todos sus partidos en la competencia</h3>
-            <figure>
-                <img src="img\campeones.jpeg" alt="Bayern Munich levanta la copa" title="Festejo del Bayern Munich">
-                <figcaption>Bayern Munich levantando la copa de la Liga de Campeones</figcaption>
-            </figure>
-            <nav class="nav-relatos">
-                <a class="i_menu_c" href="#p-tiempo">1º Tiempo</a>
-                <a class="i_menu_c" href="#s-tiempo">2º Tiempo</a>
-                <a class="i_menu_c" href="#gol">Goles</a>
-            </nav>
-            
+            <h4>Coman marcó el único gol de la final y le dio el trofeo al cuadro alemán, que ganó todos sus partidos en la competencia</h4>
+            <picture>
+                <figure class="container">
+                    <img src="img\campeones.jpeg" alt="Bayern Munich levanta la copa" title="Festejo del Bayern Munich" class="img-fluid">
+                    <figcaption>Bayern Munich levantando la copa de la Liga de Campeones</figcaption>
+                </figure>
+            </picture>
+            <div class="d-flex justify-content-center">
+                <nav class="nav navbar-dark bg-dark nav-pills">
+                    <a type="button" class="btn btn-dark nav-link text-white" href="#p-tiempo">1º Tiempo</a>
+                    <a type="button" class="btn btn-dark nav-link text-white" href="#s-tiempo">2º Tiempo</a>
+                    <a type="button" class="btn btn-dark nav-link text-white" href="#gol">Goles</a>
+                </nav>
             </div>
-            <div class="artic">
+            <div class="container">
                 <p>Una de los temporadas más atípicas de la historia del fútbol europeo llegó a su fin este domingo con el triunfo del Bayern de Múnich por 1 a 0 sobre el Paris Saint-Germain (PSG) en el Estádio da Luz, de Lisboa, en el marco de la final de la UEFA Champions League. Con arbitraje del italiano Daniele Orsato, el cuadro alemán se coronó como el nuevo campeón de Europa.</p>
                 <p id="p-tiempo">En los primeros minutos, el conjunto germano se apoderó de la mitad de la cancha gracias Goretzka y Thiago, mientras que el cuadro francés, que había intentado presionar en la salida, se encontró rápidamente acorralado en su terreno de juego. Pese a esto, en los instantes iniciales apenas hubo peligro en las áreas, y los campeones de la Ligue 1 se sintieron más cómodos con el rol de presionar y salir rápido.</p>
                 <p>La primera clara llegó a los 17 minutos. El cuadro galo recuperó en la mitad de la cancha, y Marquinhos buscó enseguida a Kylian Mbappé por la punta izquierda. El delantero encaró y luego filtró para Neymar, quien quedó mano a mano con Manuel Neuer, pero con poco ángulo, y su remate de zurda fue desactivado por el arquero.</p>
@@ -56,13 +66,16 @@
     </main>    
 
 
-    <footer>
-        <address>
+    <footer class="container-fluid bg-dark">
+        <address class="text-white">
             <p>Pablo Javier Caardozo</p>
             <p>Programa CLIP</p>
             <p>Año: 2020</p>
 
         </address>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -1,6 +1,5 @@
 body{
     background: url(./img/fondo.jpg) round fixed;
-    /* background-color: rgb(17, 17, 43); */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -9,11 +8,8 @@ body{
 }
 header{
     background: url(./img/Fondo1.jpg) round scroll;
-    border-radius: 20px;
-    width: 100%;
-    max-width: 1000px;
+    border-radius: 20px 20px 0px 0px;
     height: 40vh;
-    /* max-height: 400px; */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -25,266 +21,29 @@ header h1{
     margin: 0px;
     padding-top: 0px;
 }
-header nav{
-    width: 100%;
-    background: black;
-    border-radius: 10px;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-}
-.i_menu{
-    width: 100%;
-    color: white;
-    height: 1em;
-    padding: 10px;
-    text-decoration: none;
-    text-align: center;
-}
-.i_menu:hover{
-    color:white;
-    border-radius: 10px;
-    background: rgb(32, 98, 136);
-}
-main{
-    width: 100%;
-    max-width: 1000px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-}
-.pos-tablas{
-    margin-top: 10px;
-    max-width: 100%;
-    width: 100%;
-}
-table{
-    width: 100%;
-    max-width: 1000px;
-    border-collapse: collapse;
-    background: white;
-    border-radius: 10px;
-}
-th{
-    height: 2em;
-    color: white;
-    font-size: 20px;
-    background: black;
-    border-radius: 10px;
-    
-}
-.centrado{
-    text-align: center;
-}
-.resultado{
-    font-size: 40px;
-    width: 25%;
-    
-}
-.ic_result{
-    min-width: 109px;
-}
-.borde-top{
-    border-top: 1px solid #ccc;
-}
-.sub-hd-iconos1{
-    padding: 5px;
-    background-color: rgb(32, 98, 136);
-    border-radius: 10px 0px 0px 10px;
-}
-.sub-hd-iconos2{
-    padding: 5px;
-    background-color: rgb(32, 98, 136);
-    border-radius: 0px 10px 10px 0px;
-}
-.sub-hd{
-    color: white;
-    font-size: 26px;
-    width: 700px;
-    border-radius: 0;
-}
-.img-logo{
-    width: 30px;
-    height: 30px;
-}
-.h-celda{
-    height: 50px;
-}
-.tag-estadisticas{
-    font-size: 22px;
-    width: 150px;
-}
-.datos{
-    font-size: 22px;
-}
-address{
-    width: 100%;
-    background: black;
-    color: white;
-}
-/* pagina comentarios */
-.contenido{
-    width: 100%;
-    background-color: white;
-    border-radius: 10px;
-    margin-top: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-items: start;
-    align-items: center;
-}
-.titular{
-    color:black;
-    text-align: center;
-    margin-bottom: 0px;   
-}
-.subtitulo{
-    color:gray;
-    font-weight: bold;
-    margin-top: 0px;
-    border-top:1px solid teal;
-    border-bottom:1px solid teal;
-    text-align: center;
-    padding: 10px;
-    font-size: medium;
-}
-img{
-    max-width: 100%;
-}
-.nav-relatos{
-    background: rgb(32, 98, 136);
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-.i_menu_c{
-    color: white;
-    width: 100%;
-    height: 1rem;
-    padding: 10px;
-    text-decoration: none;
-    display: inline-flex;
-    justify-content: center;
-}
-.i_menu_c:hover{
-    color:white;
-    border-radius: 10px;
-    background: rgb(12, 22, 39);
-}
-
-.artic{
-    color: #304040;
-    font-weight: bold;
-    font-size: 18px;
-    padding: 0px 20px 20px 20px;
-}
-footer{
-    width: 100%;
-}
-footer address{
-    width: 100%;
-    border-radius: 10px;
-}
-/* pagina formaciones */
 .cancha{
-    background: url(./img/cancha.jpg) round scroll; 
     width: 100%;
-    height: 100vh;
+    background: url(./img/cancha.jpg) round scroll; 
     border-radius: 20px;
     margin-top: 5px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-}
-.psg_f{
-    text-align: center;
-    width: 100%;
-    border-radius: 20px 20px 0px 0px;
-    background-color: rgb(12, 22, 39);
-    color: wheat;
-    font-size: medium;
-}
-.byr_f{
-    text-align: center;
-    width: 100%;
-    border-radius: 0px 0px 20px 20px;
-    background-color: red;
-    color: wheat;
-    font-size: medium;
+    
 }
 
-.jugador{
-    width: 100%;
-    height: 2rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-}
-.nombre{
-    color: white;
-    background:black;
-    padding: 0px 5px 0px;
-    margin: 0px;
-    border-radius: 20%;
-}
-.jugadores{
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-.amarilla{
-    color:yellow;
-    background-color: yellow;
-    margin-left: 10px;
-}
-.sale{
-    color:red;
-    background-color: white;
-    margin-left: 5px;
-    font: bolder;
-    border-radius: 100%;
-}
-
-.ic_pos{
-    width: 3rem;
-    height: 2rem;
-}
-.ic_pos > samp{
-    text-align: center;
-    margin:0px;
-    padding: opx;
-}
-
-@media screen and (min-width: 570px){
-    header{
-        height: 50vh;
-    }
-    .titular{
-        font-size: 28px;
-    }
-    .subtitulo{
-        font-size: 24px
-    }
-    .cancha{
-        height: 150vh;
-    }
-}
-@media screen and (min-width: 800px){
+@media screen and (min-width: 767px){
     header{
         height: 70vh;
     }
+    /* .cancha{
+        height: 150vh;
+    } */
   }
 
   @media screen and (min-width: 1000px){
      body{
         background: url(./img/fondo5.jpg) round fixed;
-    }
-    .artic{
-        font-size: 20px;
     }
 }

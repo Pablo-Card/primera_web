@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UEFA CHAMPIONS LEAGUE</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <header class="container">
+        <h1 class="text-center">FINAL</h1>
+    </header>
+        <nav class="container navbar nav-pills navbar-dark bg-dark navbar-expand-sm sticky-top">
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#menu-resp" aria-controls="menu-resp" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="nav-fill navbar-collapse collapse justify-content-center" id="menu-resp">
+                <a type="button" class="btn btn-dark nav-link text-white  active" href="comentarios.html">Comentarios</a>
+                <a type="button" class="btn btn-dark nav-link text-white" href="index.html">Estadísticas</a>
+                <a type="button" class="btn btn-dark nav-link text-white" href="formaciones.html">Formaciones</a>
+                <a type="button" class="btn btn-dark nav-link text-white" href="contacto.html">Contacto</a>
+            </div>
+        </nav>
+
+    <main class="container bg-white">
+        <div class="container bg-dark">
+            <div class="container-fluid bg-info">
+                <h2 class="text-white">Cuentanos como viviste el partido mas importante de la competencia.</h2>
+            </div>
+            <form class="needs-validated" onsubmit="return validar();">
+                <div class="form-group">
+                    <label for="nombre" class=" text-white">Nombre:</label>
+                    <input type="text" class="form-control" id="nombre" placeholder="Ingresa tu Nombre">
+                </div>
+                <div class="form-group">
+                    <label for="email" class=" text-white">Email:</label>
+                    <input type="email" class="form-control" placeholder="ingresa tu email" id="email">
+                </div>
+                <div class="form-group">
+                    <label for="comment" class=" text-white">Comenta:</label>
+                    <textarea class="form-control" rows="5" id="comentario"></textarea>
+                  </div>
+                  <button type="submit" class="btn btn-primary">Enviar</button>
+                </div>
+            </form>
+        </div>   
+          
+    </main>
+    <script src="validacion.js"></script>
+</body>
+</html>

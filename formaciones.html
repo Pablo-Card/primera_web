@@ -4,325 +4,274 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>UEFA CHAMPIONS LEAGUE</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
-    <header>
-        <div class="encabezado">
-            <h1>FINAL</h1>
-        </div>
-        <nav>
-            <a class = "i_menu" href="comentarios.html">Comentarios</a>
-            <a class = "i_menu" href="index.html">Estadísticas</a>
-            <a class = "i_menu" href="formaciones.html">Formaciones</a>
-        </nav>
+    <header class="container">
+        <h1 class="text-center">FINAL</h1>
     </header>
+    <nav class="container navbar nav-pills navbar-dark bg-dark navbar-expand-sm sticky-top">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#menu-resp" aria-controls="menu-resp" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="nav-fill navbar-collapse collapse justify-content-center" id="menu-resp">
+            <a type="button" class="btn btn-dark nav-link text-white" href="comentarios.html">Comentarios</a>
+            <a type="button" class="btn btn-dark nav-link text-white" href="index.html">Estadísticas</a>
+            <a type="button" class="btn btn-dark nav-link text-white active" href="formaciones.html">Formaciones</a>
+            <a type="button" class="btn btn-dark nav-link text-white" href="contacto.html">Contacto</a>
+        </div>
+    </nav>
     <main>
         <section class="cancha">
-            <div class="psg_f">
-                <p>París Saint-Germain Football Club: 4-3-3</p>
+            <div class="container-fluid">
+                <p style="margin-top:15px" class="bg-primary text-white text-center">París Saint-Germain Football Club: 4-3-3</p>
             </div>
-            <div class="jugador">
-                <a class="ic_pos" href="#"><picture ><img src="img\PSG.png" alt="Arquero"></picture></a>
+            <div style="width: 50px; margin-top: 50px;">
+                <a class="ic_pos" href="#"><picture ><img class="img-fluid" src="img\PSG.png" alt="Arquero"></picture></a>
             </div>
-            <div class="jugador">
-                <p class="nombre">K. Navas</p>
+            <div>
+                <p class="bg-dark text-white">K. Navas</p>
             </div>
-            <div class="jugadores">
-                <a class="ic_pos" href="#"><picture><img src="img\PSG.png" alt="Defensor"></picture></a>
-                <picture class="ic_pos">
-                    <img src="img\PSG.png" alt="Defensor">
+            <div class="container-fluid d-flex justify-content-around">
+                <picture>
+                    <img  style="height: 50px;" src="img\PSG.png" alt="Defensor">
                 </picture>
-                <picture class="ic_pos">
-                    <img src="img\PSG.png" alt="Defensor">
+                <picture>
+                    <img style="height: 50px;" src="img\PSG.png" alt="Defensor">
                 </picture>
-                <picture class="ic_pos">
-                    <img src="img\PSG.png" alt="Defensor">
+                <picture>
+                    <img style="height: 50px;" src="img\PSG.png" alt="Defensor">
                 </picture>
-            </div>
-            <div class="jugadores">
-                <p class="nombre">T. Kehrer</p>
-                <p class="nombre">T. Silva<samp class="amarilla">A</samp></p>
-                <p class="nombre">Kimpembe</p>
-                <p class="nombre">J. Bernat<samp class="sale">ↆ</samp></p>
-            </div>
-            <div class="jugadores">
-                <picture class="ic_pos">
-                    <img src="img\PSG.png" alt="Medio campo">
-                </picture>
-                <picture class="ic_pos">
-                    <img src="img\PSG.png" alt="Medio campo">
-                </picture>
-                <picture class="ic_pos">
-                    <img src="img\PSG.png" alt="Medio campo">
+                <picture>
+                    <img style="height: 50px;" src="img\PSG.png" alt="Defensor">
                 </picture>
             </div>
-            <div class="jugadores">
-                <p class="nombre">A. Herrera <samp class="sale">ↆ</samp></p>
-                <p class="nombre">Marquinhos</p>
-                <p class="nombre">L. Paredes<samp class="amarilla">A</samp><samp class="sale">ↆ</samp></p>
+            <div class="container-fluid d-flex justify-content-around">
+                <p class="bg-dark text-white">T. Kehrer</p>
+                <p class="bg-dark text-white">T. Silva <samp class="bg-warning text-warning">A</samp></p>
+                <p class="bg-dark text-white">Kimpembe</p>
+                <p class="bg-dark text-white">J. Bernat<samp class="text-danger">ↆ</samp></p>
             </div>
-            <div class="jugador">
-                <picture class="ic_pos">
-                    <img src="img\PSG.png" alt="Delantero">
+            <div class="container-fluid d-flex justify-content-around">
+                <picture>
+                    <img style="height: 50px;" src="img\PSG.png" alt="Medio campo">
+                </picture>
+                <picture>
+                    <img style="height: 50px;" src="img\PSG.png" alt="Medio campo">
+                </picture>
+                <picture>
+                    <img style="height: 50px;" src="img\PSG.png" alt="Medio campo">
                 </picture>
             </div>
-            <div class="jugador">
-                <p class="nombre">Neymar<samp class="amarilla">A</samp></p>
+            <div class="container-fluid d-flex justify-content-around">
+                <p class="bg-dark text-white">A. Herrera <samp class="text-danger">ↆ</samp></p>
+                <p class="bg-dark text-white">Marquinhos</p>
+                <p class="bg-dark text-white">L. Paredes <samp class="bg-warning text-warning">A</samp><samp class="text-danger">ↆ</samp></p>
             </div>
-            <div class="jugadores">
-                <picture class="ic_pos">
-                    <img src="img\PSG.png" alt="Delantero">
-                </picture>
-                <picture class="ic_pos">
-                    <img src="img\PSG.png" alt="Delantero">
-                </picture>
-            </div>
-            <div class="jugadores">
-                <p class="nombre">Di María<samp class="sale">ↆ</samp></p>
-                <p class="nombre">K. Mbappé</p>
-            </div>
-            <div class="jugador">
-                <picture class="ic_pos">
-                    <img src="img\Bayern.png" alt="Delantero">
+            <div>
+                <picture>
+                    <img style="height: 50px;" src="img\PSG.png" alt="Delantero">
                 </picture>
             </div>
-            <div class="jugadores">
-                <p class="nombre">R. Lewandowski</p>
+            <div>
+                <p class="bg-dark text-white">Neymar <samp class="bg-warning text-warning">A</samp></p>
             </div>
-            <div class="jugadores">
-                <picture class="ic_pos">
-                    <img src="img\Bayern.png" alt="Defensor">
+            <div class="container-fluid d-flex justify-content-around">
+                <picture>
+                    <img style="height: 50px;" src="img\PSG.png" alt="Delantero">
+                </picture>
+                <picture>
+                    <img style="height: 50px;" src="img\PSG.png" alt="Delantero">
+                </picture>
+            </div>
+            <div class="container-fluid d-flex justify-content-around">
+                <p class="bg-dark text-white">Di María<samp class="text-danger">ↆ</samp></p>
+                <p class="bg-dark text-white">K. Mbappé</p>
+            </div>
+            <div>
+                <picture>
+                    <img style="height: 50px;" src="img\Bayern.png" alt="Delantero">
+                </picture>
+            </div>
+            <div class="d-flex justify-content-around">
+                <p class="bg-dark text-white">R. Lewandowski</p>
+            </div>
+            <div class="container-fluid d-flex justify-content-around">
+                <picture>
+                    <img style="height: 50px;" src="img\Bayern.png" alt="Defensor">
                 </picture>    
-                <picture class="ic_pos">
-                    <img src="img\Bayern.png" alt="Defensor">
+                <picture>
+                    <img style="height: 50px;" src="img\Bayern.png" alt="Defensor">
                 </picture>
-                <picture class="ic_pos">
-                    <img src="img\Bayern.png" alt="Defensor">
-                </picture>
-            </div>
-            <div class="jugadores">
-                <div style="font-size:15px">
-                    <picture><img src="img\futbol.png" alt="" width="28px" style="position: relative; top: -30px; left:15px;"></picture>
-                    <samp class="nombre" style="position: relative; top: -8px; left:-20px;">K. Coman<samp class="sale">ↆ</samp></samp>
-                    
-                </div>
-                <p class="nombre">T. Müller<samp class="amarilla">A</samp></p>
-                <p class="nombre">S. Gnabry<samp class="amarilla">A</samp><samp class="sale">ↆ</samp></p>
-            </div>
-            <div class="jugadores">
-                <picture class="ic_pos">
-                    <img src="img\Bayern.png" alt="Medio campo">
-                </picture>
-                <picture class="ic_pos">
-                    <img src="img\Bayern.png" alt="Medio campo">
+                <picture>
+                    <img style="height: 50px;" src="img\Bayern.png" alt="Defensor">
                 </picture>
             </div>
-            <div class="jugadores">
-                <p class="nombre">Thiago<samp class="sale">ↆ</samp></p>
-                <p class="nombre">L. Goretzka</p>
+            <div class="container-fluid d-flex justify-content-around">
+                <p class="bg-dark text-white">K. Coman<samp class="text-danger">ↆ</samp></p>
+                <p class="bg-dark text-white">T. Müller <samp class="bg-warning text-warning">A</samp></p>
+                <p class="bg-dark text-white">S. Gnabry <samp class="bg-warning text-warning">A</samp><samp class="text-danger">ↆ</samp></p>
             </div>
-            <div class="jugadores">
-                <picture class="ic_pos">
-                    <img src="img\Bayern.png" alt="Defensor">
+            <div class="container-fluid d-flex justify-content-around">
+                <picture>
+                    <img style="height: 50px;" src="img\Bayern.png" alt="Medio campo">
                 </picture>
-                <picture class="ic_pos">
-                    <img src="img\Bayern.png" alt="Defensor">
-                </picture>
-                <picture class="ic_pos">
-                    <img src="img\Bayern.png" alt="Defensor">
-                </picture>
-                <picture class="ic_pos">
-                    <img src="img\Bayern.png" alt="Defensor">
+                <picture>
+                    <img style="height: 50px;" src="img\Bayern.png" alt="Medio campo">
                 </picture>
             </div>
-            <div class="jugadores">
-                <p class="nombre">A. Davies<samp class="amarilla">A</samp></p>
-                <p class="nombre">D. Alaba</p>
-                <p class="nombre">J. Boateng<samp class="sale">ↆ</samp></p>
-                <p class="nombre">J. Kimmich</p>
+            <div class="container-fluid d-flex justify-content-around">
+                <p class="bg-dark text-white">Thiago<samp class="text-danger">ↆ</samp></p>
+                <p class="bg-dark text-white">L. Goretzka</p>
             </div>
-            <div class="jugador">
-                <picture class="ic_pos">
-                    <img src="img\Bayern.png" alt="Defensor">
+            <div class="container-fluid d-flex justify-content-around">
+                <picture>
+                    <img style="height: 50px;" src="img\Bayern.png" alt="Defensor">
+                </picture>
+                <picture>
+                    <img style="height: 50px;" src="img\Bayern.png" alt="Defensor">
+                </picture>
+                <picture>
+                    <img style="height: 50px;" src="img\Bayern.png" alt="Defensor">
+                </picture>
+                <picture>
+                    <img style="height: 50px;" src="img\Bayern.png" alt="Defensor">
                 </picture>
             </div>
-            <div class="jugadores">
-                <p class="nombre">M. Neuer</p>
+            <div class="container-fluid d-flex justify-content-around">
+                <p class="bg-dark text-white">A. Davies <samp class="bg-warning text-warning">A</samp></p>
+                <p class="bg-dark text-white">D. Alaba</p>
+                <p class="bg-dark text-white">J. Boateng<samp class="text-danger">ↆ</samp></p>
+                <p class="bg-dark text-white">J. Kimmich</p>
             </div>
-            <div class="byr_f">
-                <p>Bayern de Múnich: 4-2-3-1</p>
+            <div>
+                <picture>
+                    <img style="height: 50px;" src="img\Bayern.png" alt="Defensor">
+                </picture>
+            </div>
+            <div style="margin-bottom: 50px;">
+                <p class="bg-dark text-white">M. Neuer</p>
+            </div>
+            <div class="container-fluid">
+                <p class="bg-danger text-white text-center">Bayern de Múnich: 4-2-3-1</p>
             </div>
         </section>
-        <section style="width: 100%;">
-            <table style="width: 100%;">
+        <section class="container-fluid table-responsive">
+            <table class="table table-dark table-striped text-center">
                 <tbody>
-                    <tr>    
-                        <td class="sub-hd-iconos1">
-                            <div style="width: 30px;"><img class="img-logo" alt="PSG" src="img\PSG.png"></div>
-                        </td>
-                        <td class="sub-hd sub-hd-iconos1 centrado" colspan="6">SUPLENTES</td>
-                        <td class="sub-hd-iconos1 sub-hd-iconos2">
-                            <div style="width: 30px;"><img class="img-logo" alt="Bayern" src="img\Bayern.png"></div>
-                        </td>
+                    <tr>
+                        <td style="min-width:73px;"><img src="img\PSG.png" alt="PSG" class="img-fluid"></td>
+                        <td colspan="2"><h4>SUPLENTES</h4></td>
+                        <td style="min-width:73px;"><img src="img\Bayern.png" alt="Bayern" class="img-fluid"></td>
                     </tr>
                     <tr style="height: 2rem;">
                         <td style="text-align: center;">6</td>
                         <td>Marco Verratti<b style="color: green;">⬆</b></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
                         <td style="text-align: right;">Álvaro Odriozola</td>
                         <td style="text-align: center;">2</td>
                     </tr>
                     <tr style="height: 2rem;">
                         <td style="text-align: center;">16</td>
                         <td>Sergio Rico</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td style="text-align: right;"><samp class="amarilla">A</samp><b style="color: green;">⬆</b>Niklas Süle</td>
+                        <td style="text-align: right;"> <samp class="bg-warning text-warning">A</samp><b style="color: green;">⬆</b>Niklas Süle</td>
                         <td style="text-align: center;">4</td>
                     </tr>
                     <tr style="height: 2rem;">
                         <td style="text-align: center;">17</td>
                         <td>Eric Maxim Choupo-Moting<b style="color: green;">⬆</b></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
                         <td style="text-align: right;">Benjamin Pavard</td>
                         <td style="text-align: center;">5</td>
                     </tr>
                     <tr style="height: 2rem;">
                         <td style="text-align: center;">18</td>
                         <td>Mauro Icardi</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
                         <td style="text-align: right;">Javi Martínez</td>
                         <td style="text-align: center;">8</td>
                     </tr>
                     <tr style="height: 2rem;">
                         <td style="text-align: center;">19</td>
                         <td>Pablo Sarabia</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
                         <td style="text-align: right;"><b style="color: green;">⬆</b> Philippe Coutinho</td>
                         <td style="text-align: center;">10</td>
                     </tr>
                     <tr style="height: 2rem;">
                         <td style="text-align: center; ">20</td>
-                        <td>Layvin Kurzawa<samp class="amarilla">A</samp><b style="color: green;">⬆</b></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
+                        <td>Layvin Kurzawa <samp class="bg-warning text-warning">A</samp><b style="color: green;">⬆</b></td>
                         <td style="text-align: right;">Mickaël Cuisance</td>
                         <td style="text-align: center;">11</td>
                     </tr>
                     <tr style="height: 2rem;">
                         <td style="text-align: center;">22</td>
                         <td>Abdou Diallo</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
                         <td style="text-align: right;"><b style="color: green;">⬆</b>Perišić</td>
                         <td style="text-align: center;">14</td>
                     </tr>
                     <tr style="height: 2rem;">
                         <td style="text-align: center;">23</td>
                         <td>Julian Draxler<b style="color: green;">⬆</b></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
                         <td style="text-align: right;">Lucas Hernández</td>
                         <td style="text-align: center;">21</td>
                     </tr>
                     <tr style="height: 2rem;">
                         <td style="text-align: center;">25</td>
                         <td>Mitchel Bakker</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
                         <td style="text-align: right;"><b style="color: green;">⬆</b> Corentin Tolisso</td>
                         <td style="text-align: center;">24</td>
                     </tr>
                     <tr style="height: 2rem;">
                         <td style="text-align: center;">27</td>
                         <td>Idrissa Gana Gueye</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
                         <td style="text-align: right;">Sven Ulreich</td>
                         <td style="text-align: center;">26</td>
                     </tr>
                     <tr style="height: 2rem;">
                         <td style="text-align: center;">30</td>
                         <td>Marcin Bułka</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
                         <td style="text-align: right;">Joshua Zirkzee</td>
                         <td style="text-align: center;">35</td>
                     </tr>
                     <tr style="height: 2rem;">
                         <td style="text-align: center;">31</td>
                         <td>Colin Dagba</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
                         <td style="text-align: right;">Ron-Thorben Hoffmann</td>
                         <td style="text-align: center;">39</td>
                     </tr>
                 </tbody>
             </table>
-            <table>
+            <table class="table table-dark table-striped text-center">
                 <tbody>
                     <tr>    
-                        <td class="sub-hd-iconos1">
-                            <div style="width: 30px;"><img class="img-logo" alt="PSG" src="img\PSG.png"></div>
-                        </td>
-                        <td class="sub-hd sub-hd-iconos1 centrado" colspan="3">Director Técnico</td>
-                        <td class="sub-hd-iconos1 sub-hd-iconos2">
-                            <div style="width: 30px;"><img class="img-logo" alt="Bayern" src="img\Bayern.png"></div>
-                        </td>
+                        <td style="min-width:73px;"><img src="img\PSG.png" alt="PSG" class="img-fluid"></td>
+                        <td colspan="3"><h4>Director Técnico</h4></td>
+                        <td style="min-width:73px;"><img src="img\Bayern.png" alt="Bayern" class="img-fluid"></td>
                     </tr>
                     <tr>
                         <td></td>
-                        <td style="padding: 10px;; border-right: 1px solid grey; text-align: center;"><b>T. Tuchel</b></td>
-                        <td style="padding: 10px; text-align: center;"><b>H. Flick</b></td>
+                        <td><b>T. Tuchel</b></td>
+                        <td><b>H. Flick</b></td>
                         <td></td>
                     </tr>   
                 </tbody>
                 <tfoot>
                     <tr>
-                        <td colspan="5" style="border-top: 1px solid grey; padding: 10px; text-align: center;"><b>Estadio: Da Luz</b></tr>
+                        <td colspan="5"><b>Estadio: Da Luz</b></tr>
                     </tr>
                 </tfoot>
             </table>
         </section>
     </main>
 
-    <footer>
-        <address>
+    <footer class="container-fluid bg-dark">
+        <address class="text-white">
             <p>Pablo Javier Caardozo</p>
             <p>Programa CLIP</p>
             <p>Año: 2020</p>
 
         </address>
     </footer>
-    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 </body>
 </html>
