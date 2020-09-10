@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UEFA CHAMPIONS LEAGUE</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <header class="container">
+        <h1>FINAL</h1>
+    </header>
+    <nav class=" container navbar nav-pills navbar-dark bg-dark navbar-expand-md sticky-top">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#menu-resp" aria-controls="menu-resp" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="nav-fill navbar-collapse collapse justify-content-center" id="menu-resp">
+            <a type="button" class="btn btn-dark nav-link text-white" href="comentarios.html">Comentarios</a>
+            <a type="button" class="btn btn-dark nav-link text-white" href="index.html">Estadísticas</a>
+            <a type="button" class="btn btn-dark nav-link text-white" href="formaciones.html">Formaciones</a>
+            <a type="button" class="btn btn-dark nav-link text-white" href="contacto.html">Contacto</a>
+            <a type="button" class="btn btn-dark nav-link text-white active" href="Trivia.html">Trivia</a>
+        </div>
+    </nav>
+    <div class="container"><div class="row"><div class="col-12 bg-white"></div></div></div>
+    <main class="container bg-light">
+        
+        <div class="bg-primary text-center text-white">
+            <h2>Demuestra cuanto sabes</h2>
+        </div>
+        <div class="bg-white">
+            <p class="text-center">Responde esta pregunta y averigua que tan apasionado eres por esta competencia</p>
+        </div>
+        <!-- -------Tarjetas trivia---------- -->
+        <div class="container">
+            <div class="row">
+                <div class="col-4"></div>
+                <!--   1era Tarjeta    -->
+                <div class="col-lg-4">
+                    <div class="card">
+                        <div class="card-header">
+                            <p class="text-center"><strong>PREGUNTA</strong></p>
+                            <p>¿Que equipo se caracteriza por ser el que mas goles convirtió en la Champions League, pero ademas, es el que mas goles recibió?</p>
+                        </div>
+                        <form onsubmit="return alerta1();">
+                            <div class="card-body">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="resp1" placeholder="Responde aquí ...">
+                                </div>    
+                            </div>
+                            <div class="card-footer alert alert-secondary" id="info1">
+                                    <strong>Atención!</strong> Tienes solo 4 intentos.
+                            </div>
+                            <div class="card-footer alert alert-warning" style="display: none;" id="alert1">
+                                <p></p>
+                            </div>
+                            <div class="card-footer alert alert-danger" style="display: none;" id="error1">
+                                <strong>FALLASTE!</strong> Quizas deberías seguir mas de cerca esta competencia.
+                            </div>
+                            <div class="card-footer alert alert-success" style="display: none;" id="correcto1">
+                               <p><strong>FELICIDIADES!</strong> Tu respuesta es correcta.</p>
+                               <p>Eres un fanático de la UEFA Champions League!</p>
+                            </div>
+                            <div class="card-footer alert alert-secondary" id="info2" style="display: none;">
+                                <p><strong>DATO:</strong> El Real Madrid es el equipo que más goles ha anotado en las ediciones de la Champions hasta sumar un total de 439. Sin embargo, los blancos también tienen el honor de ser el club que más goles ha recibido: 231.</p>
+                            </div>
+                            <div class="d-flex justify-content-center">
+                                <button type="submit" class="btn-lg btn-primary" id="subm1">Aceptar</button>
+                            </div>
+                            <div></div>
+                        </form>
+                    </div>
+                </div>
+                <!--   Fin 1era tarjeta   -->
+                <div class="col-4"></div>
+            </div>
+            
+        </div>
+    </main>
+    <footer class="container-fluid bg-dark" style="margin-top: 20px;">
+        <address class="text-white">
+            <p>Pablo Javier Caardozo</p>
+            <p>Programa CLIP</p>
+            <p>Año: 2020</p>
+
+        </address>
+    </footer>
+    <script src="trivia.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>      
+</body>
+</html>
